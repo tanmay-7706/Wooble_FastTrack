@@ -1,0 +1,7 @@
+Hi Neha, Monday's takings were wrong because of three bugs in src/pricing.js. Percent coupons ignored max_discount_paise, so big orders got too much off. GST was worked out on the subtotal instead of the amount after discount. Free delivery was also decided on the subtotal, so discounted orders that fell under Rs 199 still shipped free. Arjun's three tests only used simple orders, so none of them touched these paths.
+
+I know this is right because the original code reproduces charged_paise exactly for all 156 orders, and the fixed code follows PRICING.md rule by rule. 44 of the 146 delivered orders were charged wrong. Customers were overcharged Rs 40.29 in total, which support should refund, and undercharged Rs 4,000.94.
+
+Assumptions: Monday is the India-time day, cancelled orders are excluded, and amounts are rounded only where PRICING.md says so.
+
+To change: add tests written straight from each PRICING.md rule, and replay a day of real orders against PRICING.md before every release.

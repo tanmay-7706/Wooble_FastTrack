@@ -1,0 +1,4 @@
+location,cause
+src/pricing.js discountOf(),Percent coupon ignores max_discount_paise so large orders get too much off (missing cap)
+src/pricing.js quote() gstOf(subtotal),GST is worked out on the subtotal instead of the amount after discount (wrong input)
+src/pricing.js deliveryFeeOf(),Free delivery is decided on the subtotal instead of the amount after discount (wrong input)
