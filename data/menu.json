@@ -1,0 +1,82 @@
+[
+  {
+    "id": "DAL-KHC",
+    "name": "Dal khichdi bowl",
+    "price_paise": 14900
+  },
+  {
+    "id": "RAJ-CHW",
+    "name": "Rajma chawal",
+    "price_paise": 15900
+  },
+  {
+    "id": "PNR-BTM",
+    "name": "Paneer butter masala meal",
+    "price_paise": 24900
+  },
+  {
+    "id": "CHK-BRY",
+    "name": "Chicken biryani",
+    "price_paise": 27900
+  },
+  {
+    "id": "VEG-BRY",
+    "name": "Veg dum biryani",
+    "price_paise": 21900
+  },
+  {
+    "id": "CHL-KLC",
+    "name": "Chole kulche",
+    "price_paise": 16900
+  },
+  {
+    "id": "MSL-DSA",
+    "name": "Masala dosa",
+    "price_paise": 12900
+  },
+  {
+    "id": "IDL-SMB",
+    "name": "Idli sambar (4)",
+    "price_paise": 10900
+  },
+  {
+    "id": "EGG-CRY",
+    "name": "Egg curry meal",
+    "price_paise": 19900
+  },
+  {
+    "id": "FSH-THL",
+    "name": "Fish thali",
+    "price_paise": 32900
+  },
+  {
+    "id": "MNI-THL",
+    "name": "Mini veg thali",
+    "price_paise": 18900
+  },
+  {
+    "id": "ALO-PRT",
+    "name": "Aloo paratha (2) with curd",
+    "price_paise": 13900
+  },
+  {
+    "id": "PAV-BHJ",
+    "name": "Pav bhaji",
+    "price_paise": 15900
+  },
+  {
+    "id": "GLB-JMN",
+    "name": "Gulab jamun (2)",
+    "price_paise": 5900
+  },
+  {
+    "id": "MNG-LSI",
+    "name": "Mango lassi",
+    "price_paise": 7900
+  },
+  {
+    "id": "MSL-CHS",
+    "name": "Masala chaas",
+    "price_paise": 4900
+  }
+]
