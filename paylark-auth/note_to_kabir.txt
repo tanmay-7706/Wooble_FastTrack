@@ -1,0 +1,5 @@
+Hi Kabir, two bugs signed people out. auth-3's clock is ahead of auth-1 and auth-2, so tokens it issues have a future iat. When those requests hit the other servers, checkToken throws token_not_yet_valid and the session is closed. That ended 9 sessions and affected 7 users. The second issue is the session store filling to its 20,000-session cap; the LRU eviction silently drops a live session, so the next request from that user finds nothing and ends the session as session_not_found. That ended 4 more sessions and affected 4 more users (one overlapping). In total 13 sessions ended wrongly and 10 users were signed out who should not have been.
+
+The 2 refresh_token_reused endings were us doing our job correctly. The 8 session_not_found endings with a gap over 45 minutes were idle timeouts. The rest were signed_out, session_expired, and password_changed, all fine.
+
+To fix: sync auth-3's clock with NTP and alert if drift exceeds a second. Raise the session store cap or add an overflow policy that rejects new logins instead of evicting live sessions.

@@ -1,0 +1,6 @@
+{
+  "name": "paylark-auth",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" }
+}
