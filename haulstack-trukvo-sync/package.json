@@ -1,0 +1,9 @@
+{
+  "name": "haulstack-trukvo-sync",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "report": "node src/report.js"
+  }
+}
